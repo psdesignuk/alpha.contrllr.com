@@ -1,0 +1,480 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8">
+	<title>Contrllr - Making gaming mean more.</title>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+	<meta content="en-us" http-equiv="Content-Language">
+	<meta name="keywords" content="Video games, Xbox, PlayStation, Nintendo, reviews, lists, ratings, collections, social, community, sharing">
+	<meta name="description" content="Contrllr is a gaming community, focused on allowing users to create, share and collect game reviews and lists, and import games and achievements from XBL, PSN and Steam."/>
+	<meta name="bitly-verification" content="e5ee1b019086">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="css/app.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+    
+	<link rel="shortcut icon" href="favicon.ico">
+	<meta property="og:title" content="Contrllr">
+	<meta property="og:type" content="">
+	<meta property="og:url" content="http://alpha.contrllr.com/">
+	<meta property="og:image" content="http://alpha.contrllr.com/img/contrllr-meta.png">
+	<meta property="og:site_name" content="Contrllr">
+	
+	<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-49762140-1', 'auto');
+  ga('send', 'pageview');
+
+    </script>
+</head>
+
+<body>
+	<div class="sticky">
+		<nav class="top-bar" data-topbar>
+			<ul class="title-area">
+				<li class="name">
+					<img src="img/svg/logo.svg" alt="Contrllr" class="logo">
+				</li>
+				<li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+			</ul>
+
+			<section class="top-bar-section">
+				<ul class="left">
+					<li><a href="#login">Sign In</a></li>
+					<li><a href="#registration" class="openModal">Create Account</a></li>
+					<li><a href="#">Games</a></li>
+					<li><a href="#">Systems</a></li>
+					<li><a href="#">Lists</a></li>
+					<li><a href="#">Gamers</a></li>
+				</ul>
+				<ul class="right search">
+					<li class="has-form">
+						<div class="row collapse">
+							<div class="large-12 small-12 columns">
+								<a href="#" class="search-icon"><img src="img/svg/search.svg" alt="Search"></a>
+								<input type="text" class="search-field" placeholder="Search">
+							</div>
+						</div>
+					</li>
+				</ul>
+			</section>
+		</nav>
+	</div>
+	
+	<aside id="registration" class="modal">
+	    <div class="row">
+	        <div class="large-6 columns reg-text">
+	        	<h2>Registration</h2>
+	        	<p>Register now to post reviews, rate games, create lists and collections and follow your friends.</p>
+				<p>Once registered, you can link your gaming accounts to start importing games and achievements, set your profile image, profile background, organise your favourites, find friends and more.</p>
+				<p class="terms">By registering with Contrllr, you are agreeing to the <a href="#">Terms of Service</a> and the <a href="#">Privacy Policy</a>.</p>
+				<hr/>
+				<p class="user-regged">Already have a Contrllr account? <a href="#">Log in here</a></p>
+	        </div>
+	        <div class="large-6 columns reg-details">
+	        	<div class="register-twitter"><a href="#"><img src="img/svg/twitter.svg" alt="Twitter"/>Sign up with Twitter</a></div>
+				<div class="register-facebook"><a href="#"><img src="img/svg/facebook-icon.svg" alt="Facebook"/>Sign up with Facebook</a></div>
+				<hr/>
+				<p>or</p>
+				<fieldset>
+					<form action="#" class="reg-form">
+						<input type="text" id="public-name" placeholder="Full Name" />
+						<input type="text" is="username" placeholder="Username" maxlength="16"/>
+						<input type="text" id="email-address" placeholder="Email Address" />
+						<input type="password" id="password" placeholder="Password" />
+						<input type="checkbox" id="contrllr-email" name="cc" class="notification-radio"/>
+						<label for="contrllr-email"><span></span>Email me Contrllr updates, round-ups and offers.</label>
+					</form>
+				</fieldset>
+				<hr/>
+				<div class="buttons">
+					<div class="cancel-reg"><a href="#">Cancel registration</a></div>
+					<div class="register"><a href="#">Sign Up</a></div>
+				</div>
+	        </div>
+	        <a href="#close" title="Close">Close</a>
+	    </div>
+	</aside>
+	
+	<aside id="login" class="modal">
+	    <div class="row">
+	        <div class="large-12 columns login-details">
+	        	<div class="login-twitter"><a href="#"><img src="img/svg/twitter.svg" alt="Twitter"/>Sign in with Twitter</a></div>
+				<div class="login-facebook"><a href="#"><img src="img/svg/facebook-icon.svg" alt="Facebook"/>Sign in with Facebook</a></div>
+				<hr/>
+				<p>or</p>
+				<fieldset>
+					<form action="#" class="login-form">
+						<input type="text" is="username" placeholder="Username" maxlength="16"/>
+						<input type="password" id="password" placeholder="Password" />
+						<input type="checkbox" id="contrllr-email" name="cc" class="notification-radio"/>
+						<label for="contrllr-email"><span></span>Remember me</label>
+					</form>
+				</fieldset>
+				<hr/>
+				<div class="buttons">
+					<div class="cancel-signin"><a href="#">Cancel sign in</a></div>
+					<div class="signin"><a href="#">Sign In</a></div>
+				</div>
+	        </div>
+	        <a href="#close" title="Close">Close</a>
+	    </div>
+	</aside>
+	
+	<header class="homepage">
+		<div class="row">
+			<div class="large-12 columns">
+				<h1>What are <span>you</span> playing?</h1>
+				<p>Review games, import your collections, list future releases&hellip;</p>
+				<p>Do what <span>you</span> want.</p>
+			</div>
+		</div>
+	</header>
+	
+	
+	<section class="recent-games">
+		<div class="row">
+				<h3 class="section-title left">Recent Games</h3>
+				<div class="activity right"><a href="#">All Activity</a></div>
+		</div>
+		
+		<div class="row games-list-recent">
+			<div class="large-2 medium-2 columns">
+				<a href="#">
+					<div class="title-box">
+						<img src="img/titles/titanfall-sml.jpg" alt="Titanfall" />
+						<div class="overlay">
+							<div class="add-title"><a href="#">Add Title</a></div>
+							<div class="like-title"><a href="#">Like Title</a></div>
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="large-2 medium-2 columns">
+				<a href="#">
+					<div class="title-box">
+						<img src="img/titles/bf4-sml.jpg" alt="Battlefield 4" />
+						<div class="overlay">
+							<div class="add-title"><a href="#">Add Title</a></div>
+							<div class="like-title"><a href="#">Like Title</a></div>
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="large-2 medium-2 columns">
+				<a href="#">
+					<div class="title-box">
+						<img src="img/titles/raymanlegends-sml.jpg" alt="Rayman Legends" />
+						<div class="overlay">
+							<div class="add-title"><a href="#">Add Title</a></div>
+							<div class="like-title"><a href="#">Like Title</a></div>
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="large-2 medium-2 columns">
+				<a href="#">
+					<div class="title-box">
+						<img src="img/titles/secondson-sml.jpg" alt="inFAMOUS: Second Son" />
+						<div class="overlay">
+							<div class="add-title"><a href="#">Add Title</a></div>
+							<div class="like-title"><a href="#">Like Title</a></div>
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="large-2 medium-2 columns">
+				<a href="#">
+					<div class="title-box">
+						<img src="img/titles/darksouls2-sml.jpg" alt="Dark Souls II" />
+						<div class="overlay">
+							<div class="add-title"><a href="#">Add Title</a></div>
+							<div class="like-title"><a href="#">Like Title</a></div>
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="large-2 medium-2 columns">
+				<a href="#">
+					<div class="title-box">
+						<img src="img/titles/gtav-sml.jpg" alt="Grand Theft Auto V" />
+						<div class="overlay">
+							<div class="add-title"><a href="#">Add Title</a></div>
+							<div class="like-title"><a href="#">Like Title</a></div>
+						</div>
+					</div>
+				</a>
+			</div>
+		</div>
+	</section>
+	
+	<section class="three-of-a-kind">
+		<div class="row">
+			<div class="large-4 columns organise-box">
+				<h3>Organise your game collection</h3>
+				<p>Keep a diary of the games you play. Add reviews, ratings and tags to your favourite titles. Track achievements, trophies and rewards throughout your games.</p>
+			</div>
+			<div class="large-4 columns diary-box">
+				<h3>Create, share and send lists</h3>
+				<p>Create, share and send lists of games: your favourite games of all time, the most anticipated releases, or a list games with the have the Konami code.</p>
+			</div>
+			<div class="large-4 columns import-box">
+				<h3>Import achievements and trophies</h3>
+				<p>Connect your gaming accounts and import titles, achievements, trophies and friends who already have a <a href="#">Contrllr</a> account.</p>
+			</div>
+		</div>
+	</section>
+	
+	<section class="friends-games">
+		<div class="row">
+				<h3 class="section-title left">Friends Have Been Playing</h3>
+				<div class="more right"><a href="#">More</a></div>
+			</div>
+		</div>
+		
+		<div class="row games-list-recent">
+			<div class="large-2 medium-2 columns">
+				<a href="#">
+					<div class="title-box">
+						<img src="img/titles/diablo3-sml.jpg" alt="Diablo III" />
+						<div class="overlay">
+							<div class="add-title"><a href="#">Add Title</a></div>
+							<div class="like-title"><a href="#">Like Title</a></div>
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="large-2 medium-2 columns">
+				<a href="#">
+					<div class="title-box">
+						<img src="img/titles/castlevanialos-sml.jpg" alt="Castlevania: Lord of Shadow" />
+						<div class="overlay">
+							<div class="add-title"><a href="#">Add Title</a></div>
+							<div class="like-title"><a href="#">Like Title</a></div>
+						</div>
+					</div>
+				</a>
+			</div><div class="large-2 medium-2 columns">
+				<a href="#">
+					<div class="title-box">
+						<img src="img/titles/tlou-sml.jpg" alt="The Last of Us" />
+						<div class="overlay">
+							<div class="add-title"><a href="#">Add Title</a></div>
+							<div class="like-title"><a href="#">Like Title</a></div>
+						</div>
+					</div>
+				</a>
+			</div><div class="large-2 medium-2 columns">
+				<a href="#">
+					<div class="title-box">
+						<img src="img/titles/mgsvgz-sml.jpg" alt="Metal Gear Solid V: Ground Zeroes" />
+						<div class="overlay">
+							<div class="add-title"><a href="#">Add Title</a></div>
+							<div class="like-title"><a href="#">Like Title</a></div>
+						</div>
+					</div>
+				</a>
+			</div><div class="large-2 medium-2 columns">
+				<a href="#">
+					<div class="title-box">
+						<img src="img/titles/hearthstone-sml.jpg" alt="Hearthstone" />
+						<div class="overlay">
+							<div class="add-title"><a href="#">Add Title</a></div>
+							<div class="like-title"><a href="#">Like Title</a></div>
+						</div>
+					</div>
+				</a>
+			</div><div class="large-2 medium-2 columns">
+				<a href="#">
+					<div class="title-box">
+						<img src="img/titles/disneyinfinity-sml.jpg" alt="Disney Infinity" />
+						<div class="overlay">
+							<div class="add-title"><a href="#">Add Title</a></div>
+							<div class="like-title"><a href="#">Like Title</a></div>
+						</div>
+					</div>
+				</a>
+			</div>
+		</div>
+	</section>
+	
+	<header class="review-leadin">
+		<div class="row">
+			<div class="large-12 columns">
+				<h2>Tell everyone what you thought of your latest games.</h2>
+				<p>Below are some recent reviews for games in your collection.</p>
+				<p><span><a href="#">Start a review now</a></span> and share with friends across Facebook, Twitter, Google+ and more..</p>
+			</div>
+		</div>
+	</header>
+	
+	<section class="activity-feed">
+		<div class="row">
+			<div class="large-8 columns home-reviews">
+				<div class="row">
+						<h3 class="section-title left">Recent Reviews</h3>
+						<div class="more right"><a href="#">More</a></div>
+				</div>
+				
+				<div class="row single-review">
+					<div class="large-2 columns">
+						<div class="title-box"><img src="img/titles/titanfall-sml.jpg" alt="Titanfall" /></div>
+						<img src="img/svg/xboxone.svg" alt="Xbox One" class="platform"/>
+					</div>
+					<div class="large-10 columns">
+						<h2 class="review-title">Titanfall <span>2014</span></h2>
+						<a href="#" class="profile-link"><img src="img/profiles/phil-xs.jpg" alt="Phil Stringfellow" class="avatar sml"/>Phil Stringfellow</a>
+						<div class="rating 5">
+							<ul class="rating-stars">
+								<li class="label">Rating:</li>
+								<li class="on"></li>
+								<li class="on"></li>
+								<li class="on"></li>
+								<li class="on"></li>
+								<li class="on"></li>
+							</ul>
+						</div>
+						<div class="contrllr-stats">
+							<div class="review-likes liked">156 Likes</div>
+							<div class="review-comments commented">32 Comments</div>
+						</div>
+						<article class="review-body">
+							<p>When you look at Titanfall, it's easy to see the familiar. Most of the weapons, grenades, and abilities fill well-worn niches. Many of the environments are like the grimy villages and industrial complexes that have hosted countless online battles in dozens of other games. The competitive modes are bog standard. And yet, when you play Titanfall, it's impossible to shake the feeling that you're playing something special.</p>
+							<p>The key is mobility. Titanfall gives you the ability to leap, climb&hellip; <a href="#">more</a></p>
+						</article>
+					</div>
+				</div>
+				
+				<div class="row single-review">
+					<div class="large-2 columns">
+						<div class="title-box"><img src="img/titles/ffxhd-sml.jpg" alt="Final Fantasy X/X-2 HD" /></div>
+						<img src="img/svg/psvita.svg" alt="PS Vita" class="platform" />
+					</div>
+					<div class="large-10 columns">
+						<h2 class="review-title">Final Fantasy X/X-2 HD <span>2014</span></h2>
+						<a href="#" class="profile-link"><img src="img/profiles/kaos-xs.jpg" alt="Miss Kaos" class="avatar sml"/>Miss Kaos</a>
+						<div class="rating 4">
+							<ul class="rating-stars">
+								<li class="label">Rating:</li>
+								<li class="on"></li>
+								<li class="on"></li>
+								<li class="on"></li>
+								<li class="on"></li>
+								<li class="off"></li>
+							</ul>
+						</div>
+						<div class="contrllr-stats">
+							<div class="review-likes">24 Likes</div>
+							<div class="review-comments">4 Comments</div>
+						</div>
+						<article class="review-body">
+							<p>Even considering my fond memories of Yuna's pilgrimage through the ecclesiastical world of Spira, I couldn't help but consider Final Fantasy X's age when firing up the aptly titled HD Remaster version. It often takes more than a fresh coat of graphical paint to drag an aged product into modern times, but luckily, this marvelous role-playing game doesn't feel stuck in the past. The visual updates--as well as the addition of content previously exclusive to the international edition of the PlayStation 2 original--are compelling reasons to revisit one of the most poignant entries in the long-running series. Yet the religiously charged plot and&hellip; <a href="#">more</a></p>
+						</article>
+					</div>
+				</div>
+			</div>
+			
+			<div class="large-4 columns home-lists">
+				<div class="row friends">
+						<h3 class="section-title left">Lists From Your Friends</h3>
+						<div class="more right"><a href="#">More</a></div>
+				</div>
+				
+				<div class="row single-list">
+					<div class="large-12 columns">
+						<ul>
+							<li class="list-entry"><a href="#"><img src="img/titles/titanfall-sml.jpg" alt="Titanfall" /></a></li>
+							<li class="list-entry"><a href="#"><img src="img/titles/southpark-sml.jpg" alt="South Park: The Stick of Truth" /></a></li>
+							<li class="list-entry"><a href="#"><img src="img/titles/darksouls2-sml.jpg" alt="Dark Souls II" /></a></li>
+							<li class="list-entry"><a href="#"><img src="img/titles/bravelydefault-sml.jpg" alt="Bravely Default" /></a></li>
+							<li class="list-more"><a href="#">4<span>+</span></a></li>
+						</ul>
+						<h5 class="list-title">Best games of 2014&hellip; so far.</h5>
+						<div class="list-likes liked">156 Likes</div>
+						<a href="#" class="profile-link"><img src="img/profiles/phil-xs.jpg" alt="Phil Stringfellow" class="avatar sml"/>Phil Stringfellow</a>
+					</div>
+				</div>
+				
+				<div class="row single-list">
+					<div class="large-12 columns">
+						<ul>
+							<li class="list-entry"><a href="#"><img src="img/titles/blastcorps-sml.jpg" alt="Blast Corps" /></a></li>
+							<li class="list-entry"><a href="#"><img src="img/titles/zeldamm-sml.jpg" alt="Legend of Zelda: Majora's Mask" /></a></li>
+							<li class="list-entry"><a href="#"><img src="img/titles/wariowaresm-sml.jpg" alt="Wario Ware: Smooth Moves" /></a></li>
+							<li class="list-entry"><a href="#"><img src="img/titles/catherine-sml.jpg" alt="Catherine" /></a></li>
+							<li class="list-more"><a href="#">19<span>+</span></a></li>
+						</ul>
+						<h5 class="list-title">Most Original Games Ever.</h5>
+						<div class="list-likes">1 Like</div>
+						<a href="#" class="profile-link"><img src="img/profiles/kaos-xs.jpg" alt="Miss Kaos" class="avatar sml"/>Miss Kaos</a>
+					</div>
+				</div>
+				
+				<div class="row popular">
+						<h3 class="section-title left">Popular Lists</h3>
+						<div class="more right"><a href="#">More</a></div>
+				</div>
+				
+				<div class="row single-list">
+					<div class="large-12 columns">
+						<ul>
+							<li class="list-entry"><a href="#"><img src="img/titles/halo-sml.jpg" alt="Halo: Combat Evolved" /></a></li>
+							<li class="list-entry"><a href="#"><img src="img/titles/halo2-sml.jpg" alt="Halo 2" /></a></li>
+							<li class="list-entry"><a href="#"><img src="img/titles/halo3-sml.jpg" alt="Halo 3" /></a></li>
+							<li class="list-entry"><a href="#"><img src="img/titles/halo3odst-sml.jpg" alt="Halo 3: ODST" /></a></li>
+							<li class="list-more"><a href="#">4<span>+</span></a></li>
+						</ul>
+						<h5 class="list-title">Halo Lore</h5>
+						<div class="list-likes liked">156 Likes</div>
+						<a href="#" class="profile-link"><img src="img/profiles/kaos-xs.jpg" alt="Miss Kaos" class="avatar sml"/>Miss Kaos</a>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+		
+	</section>
+	
+	<footer>
+		<div class="row">
+			<div class="large-7 columns">
+				<nav>
+					<ul>
+						<li><a href="#">About</a></li>
+						<li><a href="#">News</a></li>
+						<li><a href="#">Contrllr Pro</a></li>
+						<li><a href="#">Contrllr Apps</a></li>
+						<li><a href="#">Help</a></li>
+						<li><a href="#">Feedback</a></li>
+						<li><a href="#">Terms</a></li>
+						<li><a href="#">Contact</a></li>
+					</ul>
+				</nav>
+				<div class="copyright">
+					<p>&copy; 2014 Contrllr. All Rights Reserved. Proudly made in England.</p>
+					<p>Game data provided by Steam, Xbox Live, PSN, Battle.net and Nintendo Network in conjunction with Metacritic, GameRankings and MobyGames. All copyright is respective of its original owners.</p>
+				</div>
+			</div>
+			
+			<div class="large-5 columns ads">
+				<a href="#"><img src="img/ad.jpg" alt="advert" /></a>
+				<a href="#"><img src="img/ad.jpg" alt="advert" /></a>
+				<a href="#"><img src="img/ad.jpg" alt="advert" /></a>
+			</div>
+		</div>
+	</footer>
+				
+
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+</body>
+</html>
